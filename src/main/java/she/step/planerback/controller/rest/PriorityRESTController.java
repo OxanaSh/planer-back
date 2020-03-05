@@ -36,8 +36,12 @@ public class PriorityRESTController {
 
     @PostMapping("/update")
     public Priority update(@RequestBody Priority priority){
-
         return service.update(priority);
+    }
+
+    @RequestMapping("/get/{id}")
+    public Priority get(@PathVariable("id")Integer id){
+        return service.get(id);
     }
 
 

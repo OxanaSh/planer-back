@@ -58,7 +58,7 @@ public class PriorityDAOMongoImpl implements IPriorityDAO {
     @Override
     public Priority delete(Integer id) {
         Priority priority = this.get(id);
-        if(priority != null)repository.deleteById(id);
+        repository.deleteById(id);
         return priority;
     }
 
