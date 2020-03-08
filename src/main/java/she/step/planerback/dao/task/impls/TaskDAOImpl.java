@@ -36,9 +36,9 @@ public class TaskDAOImpl implements ITaskDAO {
         this.repository = repository;
     }
 
-   // @PostConstruct
+   @PostConstruct
     void init(){
-        repository.deleteAll();
+   //     repository.deleteAll();
         repository.saveAll(list);
     }
 

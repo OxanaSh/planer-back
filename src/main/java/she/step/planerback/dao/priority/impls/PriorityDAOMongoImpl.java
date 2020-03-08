@@ -34,7 +34,7 @@ public class PriorityDAOMongoImpl implements IPriorityDAO {
 
    @PostConstruct
     void init(){
-        repository.deleteAll();
+       // repository.deleteAll();
         repository.saveAll(list);
     }
 
