@@ -27,6 +27,7 @@ public class CategoryDAOImpl implements ICategoryDAO {
                     new Category(5, "сім'я", "family")
     ));
 
+
     private final CategoryRepositoryMongo repository;
 
     @Autowired
